@@ -8,7 +8,7 @@ connectDB();
 
 app.use(cors());
 app.use(cors({
-    origin: 'https://to-do-app-sksohail19.vercel.app',
+    origin: 'https://to-do-app-ten-lac.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }))
