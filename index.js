@@ -9,8 +9,8 @@ connectDB();
 app.use(cors());
 app.use(cors({
   origin: [
+    "https://to-do-app-two-gamma-23.vercel.app",
     "https://to-do-app-sksohail19.vercel.app",
-    "https://to-do-app-ten-lac.vercel.app",
     "https://to-do-app-git-main-sksohail19.vercel.app"
   ],
     credentials: true,
@@ -19,8 +19,8 @@ app.use(cors({
 }))
 
 
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use("/auth", require("./routes/auth"))
 app.use("/list", require("./routes/list"));
 
